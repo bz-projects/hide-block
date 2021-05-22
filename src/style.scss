@@ -1,0 +1,19 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.hide-block {
+
+	&__toolbar {
+		.MuiFormControlLabel-root {
+			margin: 0 4px;
+		}
+	}
+
+	&--active {
+		opacity: .5;
+	}
+}
