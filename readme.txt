@@ -54,6 +54,7 @@ https://github.com/bz-projects/hide-block
 == Screenshots ==
 1. Toolbar Setting for each blocks in Gutenberg
 2. Custom advanced setting 
+3. Block Settings
 
 
 == Changelog ==
