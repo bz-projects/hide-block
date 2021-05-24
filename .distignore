@@ -6,6 +6,7 @@
 
 .distignore
 .gitignore
+.gitattributes
 .editorconfig
 package-lock.json
 package.json
