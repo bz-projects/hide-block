@@ -12,7 +12,7 @@ you can hide or show block from your page.
 * Updated for the new WordPress Gutenberg Editor
 
 
-### Documentation & Support =
+### Documentation & Support
 
 Got a problem or need help with Easy SVG Support? Than you can write me an e-mail:
 info@benjamin-zekavica.de or you can ask your question in the forums section.
