@@ -30,7 +30,6 @@ function attrHideBlock( props ) {
 wp.hooks.addFilter('blocks.registerBlockType', 'hideblock/attr', attrHideBlock );
 
 
-
 // HideBlock - Editor
 const editorHideBlock = createHigherOrderComponent( ( BlockEdit ) => {
     
@@ -39,41 +38,41 @@ const editorHideBlock = createHigherOrderComponent( ( BlockEdit ) => {
             <Fragment>
                 <BlockControls>
                     <ToolbarGroup>
-							<ToggleButtonGroup className="hide-block__toolbar">
-								<Tooltip 
-									title={
-										props.attributes.hiddenblock ? 
-											__('Show Block', 'hideblock')
-										:
-											__('Hide Block', 'hideblock')
-									}>
-
-									<FormControlLabel
-										label={false}
-										control={
-											<Checkbox
-												color="primary"
-												checked={ props.attributes.hiddenblock }
-												onChange={ (boolean) => {
-													props.setAttributes({
-														hiddenblock: boolean.target.checked
-													}); 
-												}}
-												icon={
-													<VisibilityOutlinedIcon
-														style={{ color: 'var(--wp-admin-theme-color)' }}
-													/>
-												} 
-												checkedIcon={ 
-													<VisibilityOffOutlinedIcon
-														style={{ color: 'var(--wp-admin-theme-color)' }}
-													/>
-												}
-											/>
-										}
+			<ToggleButtonGroup className="hide-block__toolbar">
+				<Tooltip 
+					title={
+						props.attributes.hiddenblock ? 
+							__('Show Block', 'hide-block')
+						:
+							__('Hide Block', 'hide-block')
+					}
+	    			>
+					<FormControlLabel
+						label={false}
+						control={
+							<Checkbox
+								color="primary"
+								checked={ props.attributes.hiddenblock }
+								onChange={ (boolean) => {
+									props.setAttributes({
+										hiddenblock: boolean.target.checked
+									}); 
+								}}
+								icon={
+									<VisibilityOutlinedIcon
+										style={{ color: 'var(--wp-admin-theme-color)' }}
 									/>
-								</Tooltip>
-							</ToggleButtonGroup>
+								} 
+								checkedIcon={ 
+									<VisibilityOffOutlinedIcon
+										style={{ color: 'var(--wp-admin-theme-color)' }}
+									/>
+								}
+							/>
+						}
+					/>
+				</Tooltip>
+			</ToggleButtonGroup>
                     </ToolbarGroup>
                 </BlockControls>
                 
@@ -83,8 +82,8 @@ const editorHideBlock = createHigherOrderComponent( ( BlockEdit ) => {
                             label={ __('Hide Block', 'hideblock') }
                             help={
                                 props.attributes.hiddenblock
-                                    ? __('Block is hidden', 'hideblock')
-                                    : __('Block is visible', 'hideblock')
+                                    ? __('Block is hidden', 'hide-block')
+                                    : __('Block is visible', 'hide-block')
                             }
                             checked={ props.attributes.hiddenblock }
                             onChange={ ( boolean ) => {
@@ -96,16 +95,16 @@ const editorHideBlock = createHigherOrderComponent( ( BlockEdit ) => {
                     </PanelRow>
                 </InspectorAdvancedControls>
 
-				<section 
-					className={
-						props.attributes.hiddenblock ? 
-							'hide-block hide-block--active'
-						:
-							'hide-block'
-					}
-				>
-					<BlockEdit { ...props } />
-				</section>
+		<section 
+			className={
+				props.attributes.hiddenblock ? 
+					'hide-block hide-block--active'
+				:
+					'hide-block'
+			}
+		>
+			<BlockEdit { ...props } />
+		</section>
         
             </Fragment>
         );
