@@ -2,13 +2,13 @@
 /**
 Plugin Name:       Hide Block
 Description:       Gutenberg Toolkit - Hide Backend Blocks
-Plugin URI:        https://wordpress.org/plugins/hideblock
-Version:           1.0.0
+Plugin URI:        https://wordpress.org/plugins/hide-block
+Version:           1.0.1
 Author:            Benjamin Zekavica
 Author URI:        https://www.benjamin-zekavica.de
 License:           GPL v2 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain:       hideblock
+Text Domain:       hide-block
 Domain Path: 	  /languages
 
 Hide Block is free software: you can redistribute it and/or modify
