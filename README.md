@@ -14,7 +14,7 @@ you can hide or show block from your page.
 
 ### Documentation & Support
 
-Got a problem or need help with Easy SVG Support? Than you can write me an e-mail:
+Got a problem or need help with Hide Block? Than you can write me an e-mail:
 info@benjamin-zekavica.de or you can ask your question in the forums section.
 
 
