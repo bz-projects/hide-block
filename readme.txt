@@ -3,11 +3,11 @@ Author URI: https://www.benjamin-zekavica.de
 Plugin URI: https://wordpress.org/plugins/hideblock
 Contributors: Benjamin_Zekavica
 Donate link: https://www.paypal.me/benjaminzekavica
-Tags: wordpress gutenberg, gutenberg block disable, hide block, gutenberg hide single block, blocks, gutenberg toolbar hide block, frontend hide
+Tags: gutenberg, gutenberg block disable, hide block, gutenberg hide, blocks, gutenberg toolbar hide block
 Requires at least: 5.0
 Tested up to: 5.7.2
 Requires PHP: 7.0
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GNU Version 2 or Any Later Version
 License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 
@@ -30,7 +30,7 @@ you can hide or show block from your page.
 
 = Documentation & Support =
 
-Got a problem or need help with Easy SVG Support? Than you can write me an e-mail:
+Got a problem or need help with Hide Block? Than you can write me an e-mail:
 info@benjamin-zekavica.de or you can ask your question in the forums section.
 
 
@@ -59,6 +59,10 @@ https://github.com/bz-projects/hide-block
 
 == Changelog ==
 
+= 1.0.1: 26th of May, 2021 =
+* Language Slug Fix
+
+= 1.0.0: 24th of May, 2021 =
 * Initial Release
 
 == Upgrade Notice ==
