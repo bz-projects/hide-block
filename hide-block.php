@@ -82,6 +82,6 @@ add_filter( 'render_block', 'hideblock_plugin_frontend', 10, 3);
 
 // Translation
 function hideblock_plugin_translation() {
-	wp_set_script_translations( 'hideblock-script', 'hideblock', plugin_dir_path( __FILE__ ) . 'languages');
+	wp_set_script_translations( 'hideblock-script', 'hide-block', plugin_dir_path( __FILE__ ) . 'languages');
 }
 add_action( 'init', 'hideblock_plugin_translation' );
