@@ -1,6 +1,6 @@
 {
 	"name": "hideblock",
-	"version": "0.1.0",
+	"version": "1.1",
 	"description": "Example block written with ESNext standard and JSX support – build step required.",
 	"author": "The WordPress Contributors",
 	"license": "GPL-2.0-or-later",
@@ -14,14 +14,14 @@
 		"packages-update": "wp-scripts packages-update"
 	},
 	"dependencies": {
-		"@material-ui/core": "^4.11.4",
+		"@material-ui/core": "^4.12.2",
 		"@material-ui/icons": "^4.11.2",
-		"@material-ui/lab": "^4.0.0-alpha.58",
-		"@wordpress/block-editor": "^6.1.0",
-		"@wordpress/blocks": "^9.1.0",
-		"@wordpress/i18n": "^4.1.0"
+		"@material-ui/lab": "^4.0.0-alpha.60",
+		"@wordpress/block-editor": "^6.2.0",
+		"@wordpress/blocks": "^9.1.7",
+		"@wordpress/i18n": "^4.2.0"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^16.1.0"
+		"@wordpress/scripts": "^16.1.4"
 	}
 }
