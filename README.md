@@ -31,4 +31,4 @@ info@benjamin-zekavica.de or you can ask your question in the forums section.
 Please use the Gutenberg Editor. Please disable the Classic Editor Plugin. 
 Only usable for WordPress 5.0
 
-Copyright 2021 by Benjamin Zekavica. All rights reserved! 
+Copyright 2022 by Benjamin Zekavica. All rights reserved! 
