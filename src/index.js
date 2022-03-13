@@ -4,8 +4,6 @@ const { InspectorAdvancedControls, BlockControls } = wp.blockEditor;
 const { PanelRow, ToggleControl, ToolbarGroup, ToolbarItem, Button, Dashicon } = wp.components;
 const { __ } = wp.i18n;
 
-// Styling 
-import './style.scss';
 
 // HideBlock - Added Attr
 function attrHideBlock( props ) {
@@ -23,13 +21,14 @@ wp.hooks.addFilter('blocks.registerBlockType', 'hideblock/attr', attrHideBlock )
 
 // HideBlock - Editor
 const editorHideBlock = createHigherOrderComponent( ( BlockEdit ) => {
-    
+
     return ( props ) => {
+
 
 		return(
 			<Fragment>
 				<BlockControls>
-					<ToolbarGroup>
+					<ToolbarGroup className="hide-block__toolbar">
 						<ToolbarItem
 							as={ Button } 
 							onClick={ 
@@ -54,7 +53,7 @@ const editorHideBlock = createHigherOrderComponent( ( BlockEdit ) => {
 						</ToolbarItem>
 					</ToolbarGroup>
 				</BlockControls>
-
+				
 				<InspectorAdvancedControls>
 					<PanelRow>
 						<ToggleControl
@@ -73,18 +72,25 @@ const editorHideBlock = createHigherOrderComponent( ( BlockEdit ) => {
 						/>
 					</PanelRow>
 				</InspectorAdvancedControls>
+							
 
-				<section 
-					className={
-						props.attributes.hiddenblock ? 
-							'hide-block hide-block--active'
-						:
-							'hide-block'
-					}
-				>
-					<BlockEdit { ...props } />
-				</section>
-		
+				{  props.name === 'core/columns' || props.name === 'core/column' ? 
+
+						<BlockEdit { ...props } />
+
+					: 
+						<div 
+							className={
+								props.attributes.hiddenblock ? 
+									'hide-block hide-block--active'
+								:
+									'hide-block'
+							}
+						>	
+							<BlockEdit { ...props } />
+						</div>
+				}
+				
 			</Fragment>
 		);
     };
