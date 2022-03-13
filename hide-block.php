@@ -70,7 +70,7 @@ add_action( 'enqueue_block_assets', 'hideblock_plugin_scripts' );
 
 // Dynamic Return Contents
 function hideblock_plugin_frontend( $block_content, $block ) {
-	if( $block['attrs']['hiddenblock'] ) {
+	if( isset( $block['attrs']['hiddenblock'] ) ) {
 		return null;
 	} else {
 		return $block_content;
