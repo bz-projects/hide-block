@@ -4,10 +4,10 @@ Plugin URI: https://wordpress.org/plugins/hide-block
 Contributors: Benjamin_Zekavica
 Donate link: https://www.paypal.me/benjaminzekavica
 Tags: gutenberg, gutenberg block disable, hide block, gutenberg hide, blocks, gutenberg toolbar hide block
-Requires at least: 5.0
-Tested up to: 5.9
+Requires at least: 5.4
+Tested up to: 5.9.2
 Requires PHP: 7.0
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 License: GNU Version 2 or Any Later Version
 License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 
@@ -58,6 +58,14 @@ https://github.com/bz-projects/hide-block
 
 
 == Changelog ==
+
+= 1.2.1: 13th of March, 2022 =
+* Support new Gutenberg Version
+* Support WordPress 5.9.2
+* PHP Notice Fix - No more messages in your debug log
+* Gutenberg Backend Block Classes Fix - Columns Block fix
+* Remove CSS File - Better Backend performance
+* Icon Fix
 
 = 1.2.0: 26th of January, 2022 =
 * Support new Gutenberg Version
