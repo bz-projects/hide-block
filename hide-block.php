@@ -3,7 +3,7 @@
 Plugin Name:       Hide Block
 Description:       Gutenberg Toolkit - Hide Backend Blocks
 Plugin URI:        https://wordpress.org/plugins/hide-block
-Version:           1.3.0
+Version:           1.4.0
 Author:            Benjamin Zekavica
 Author URI:        https://www.benjamin-zekavica.de
 License:           GPL v2 or later
@@ -24,7 +24,7 @@ You should have received a copy of the GNU General Public License
 along with Easy SVG. If not, see license.txt .
 
 Copyright by:
-© 2022 by Benjamin Zekavica. All rights reserved.
+© 2023 by Benjamin Zekavica. All rights reserved.
 Imprint:
 Benjamin Zekavica
 E-Mail: info@benjamin-zekavica.de
