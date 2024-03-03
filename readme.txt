@@ -5,9 +5,9 @@ Contributors: Benjamin_Zekavica
 Donate link: https://www.paypal.me/benjaminzekavica
 Tags: gutenberg, gutenberg block disable, hide block, gutenberg hide, blocks, gutenberg toolbar hide block
 Requires at least: 5.4
-Tested up to: 6.3
+Tested up to: 6.4
 Requires PHP: 7.0
-Stable tag: 1.4.0
+Stable tag: 1.5.0
 License: GNU Version 2 or Any Later Version
 License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 
@@ -59,6 +59,9 @@ https://github.com/bz-projects/hide-block
 
 == Changelog ==
 
+= 1.5.0: 3rd of March, 2024 =
+* Support new Gutenberg Version
+* Support WordPress 6.4
 
 = 1.3.0: 19th of June, 2023 =
 * Support new Gutenberg Version

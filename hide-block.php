@@ -3,7 +3,7 @@
 Plugin Name:       Hide Block
 Description:       Gutenberg Toolkit - Hide Backend Blocks
 Plugin URI:        https://wordpress.org/plugins/hide-block
-Version:           1.4.0
+Version:           1.5.0
 Author:            Benjamin Zekavica
 Author URI:        https://www.benjamin-zekavica.de
 License:           GPL v2 or later
@@ -24,7 +24,7 @@ You should have received a copy of the GNU General Public License
 along with Easy SVG. If not, see license.txt .
 
 Copyright by:
-© 2023 by Benjamin Zekavica. All rights reserved.
+© 2024 by Benjamin Zekavica. All rights reserved.
 Imprint:
 Benjamin Zekavica
 E-Mail: info@benjamin-zekavica.de
@@ -59,32 +59,19 @@ add_action( 'enqueue_block_editor_assets', 'hideblock_plugin_editor_scripts' );
 if( !function_exists( 'hideblock_plugin_style' ) ) {
 
     function hideblock_plugin_style() {
-        echo "<style>
-        
-            .hide-block--active {
-                opacity: 0.5;
-            }
-
-            .hide-block__toolbar .components-button {
-                justify-content: center;
-            }
-
-            .hide-block__columns .hide-block {
-                flex: 1;
-            }
-
-            </style>";
+        add_editor_style( plugins_url( '/build/style-index.css', __FILE__ ) );
     }
-    add_action('admin_head', 'hideblock_plugin_style');
+    add_action('admin_init', 'hideblock_plugin_style');
 }
 
 // Dynamic Return Contents
 function hideblock_plugin_frontend( $block_content, $block ) {
-	if( isset( $block['attrs']['hiddenblock'] ) ) {
+
+	if( !empty( $block['attrs']['hiddenblock'] ) ) {
 		return null;
 	} else {
-		return $block_content;
-	}
+        return $block_content;
+    }
 }
 add_filter( 'render_block', 'hideblock_plugin_frontend', 10, 3);
 

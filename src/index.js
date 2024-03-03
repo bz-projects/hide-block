@@ -1,3 +1,5 @@
+import './style.scss';
+
 const { createHigherOrderComponent } = wp.compose;
 const { Fragment } = wp.element;
 const { InspectorAdvancedControls, BlockControls } = wp.blockEditor;
@@ -72,7 +74,6 @@ const editorHideBlock = createHigherOrderComponent( ( BlockEdit ) => {
 						/>
 					</PanelRow>
 				</InspectorAdvancedControls>
-							
 
 				{  props.name === 'core/columns' || props.name === 'core/column' ? 
 
@@ -90,7 +91,6 @@ const editorHideBlock = createHigherOrderComponent( ( BlockEdit ) => {
 							<BlockEdit { ...props } />
 						</div>
 				}
-				
 			</Fragment>
 		);
     };
