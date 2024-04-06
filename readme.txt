@@ -2,7 +2,6 @@
 Author URI: https://www.benjamin-zekavica.de
 Plugin URI: https://wordpress.org/plugins/hide-block
 Contributors: Benjamin_Zekavica
-Donate link: https://www.paypal.me/benjaminzekavica
 Tags: gutenberg, gutenberg block disable, hide block, gutenberg hide, blocks, gutenberg toolbar hide block
 Requires at least: 5.4
 Tested up to: 6.5
