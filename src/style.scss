@@ -1,7 +1,5 @@
 .hide-block {
     &--active {
         opacity: 0.4;
-        outline: 2px dashed var(--wp-admin-theme-color);
-        padding: 12px;
     }
 }
